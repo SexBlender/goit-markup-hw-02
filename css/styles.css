@@ -152,6 +152,7 @@ button {
 }
 
 .team-title {
+  text-transform: capitalize;
 }
 .team-list {
 }
@@ -174,6 +175,7 @@ button {
 .portfolio {
 }
 .portfolio-title {
+  text-transform: capitalize;
 }
 
 .portfolio-list {
