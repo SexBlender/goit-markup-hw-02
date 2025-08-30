@@ -11,6 +11,14 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
 /* HEADER */
 .logo {
   font-family: "raleway", sans-serif;
@@ -22,7 +30,7 @@ a {
   color: #4d5ae5;
 }
 
-.logo-studio {
+.logo .logo-studio {
   color: #2e2f42;
 }
 
@@ -34,8 +42,14 @@ a {
   color: #2e2f42;
 }
 
-.header-menu-item {
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #404bbf;
 }
+
+/* .header-menu-link:is(:hover, :focus) {
+  color: #404bbf;
+} */
 
 .header-contacts {
 }
@@ -47,6 +61,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: #404bbf;
 }
 
 /* HERO */
@@ -73,10 +92,26 @@ a {
   background-color: #4d5ae5;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
 /* features */
 .features {
 }
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list {
@@ -103,6 +138,12 @@ a {
 }
 
 .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 .team-list {
 }
@@ -161,10 +202,11 @@ a {
   background-color: #2e2f42;
 }
 
-.futer-logo {
+.footer-logo {
+  font-family: "raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
